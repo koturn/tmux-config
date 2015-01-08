@@ -1,0 +1,1 @@
+copy .tmux.conf %HOME%
