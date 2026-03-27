@@ -1,0 +1,3 @@
+#!/bin/sh
+
+free -b | awk '{ if (NR == 2) { used = $2 - $7; printf("%.1f%% (%d / %d MiB)\n", used * 100.0 / $2, used / 1048576, $2 / 1048576); } }'
